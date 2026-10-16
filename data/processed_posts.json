@@ -1,0 +1,82 @@
+[
+    {
+        "text": "NVIDIA + World Labs turned 32 images into an explorable 3D world. \ud83d\ude80 \n\nWorld Labs\u2019 Atlas took just 32 images of NVIDIA\u2019s Voyager headquarters and turned them into a space you can actually explore.\n\nTrained on NVIDIA Blackwell GPUs, Atlas uses the images as 3D spatial context to understand the building\u2019s layout and generate new views in real time.\n\nMove the camera.\nChange your viewpoint.\nLook around.\n\nThe crazy part?\n\nThose new views weren\u2019t directly captured in the original 32 images. \ud83d\udc40\n\nThis feels like a big step beyond AI that simply understands images.\n\nWe\u2019re moving toward AI that can understand spaces, geometry, and perspective.\n\n\ud83e\udd16 Robotics\n\ud83e\udd7d Spatial computing\n\ud83c\udfae Virtual worlds\n\ud83c\udfd7\ufe0f Digital twins\n\n32 images \u2192 an explorable world. \ud83c\udf0e\n\nhashtag\n\n#NVIDIA hashtag\n#WorldLabs hashtag\n#Atlas hashtag\n#Blackwell hashtag\n#AI hashtag\n#WorldModels hashtag\n#GenerativeAI hashtag\n#Robotics hashtag\n#SpatialComputing hashtag\n#DigitalTwins",
+        "engagement": 159,
+        "line_count": 38,
+        "language": "English",
+        "tags": [
+            "NVIDIA",
+            "WorldLabs"
+        ]
+    },
+    {
+        "text": "\ud83d\ude80 Google just open-sourced ARTEMIS \ud83c\udf12.\n\nIt lets AI assistants control real Android phones like a human.\n\nThink about that for a second.\n\nYou give the agent a task.\n\n\ud83d\udc49 It sees the screen\n\ud83d\udc49 Finds the right elements\n\ud83d\udc49 Taps, swipes and navigates\n\ud83d\udc49 Verifies what happened\n\ud83d\udc49 And reports the result\n\nNo need to hard-code every interaction.\n\nAnd it connects directly to AI coding agents through MCP:\n\n\u2713 Claude Code\n\u2713 Codex\n\u2713 Cursor\n\u2713 Windsurf\n\u2713 Antigravity\n\u2713 VS Code and more\n\nThe benchmark numbers are interesting too:\n\n\u26a1 99%+ task completion on AndroidWorld\n\u26a1 100+ multi-step tasks\n\u26a1 ~3\u20135 seconds per step with Flash mode\n\u26a1 Multimodal targeting using accessibility, OCR and vision\n\u26a1 Screenshots, execution traces and diagnostics\n\u26a1 Python SDK for integrating it into your own test pipelines\n\nBut the bigger idea is what caught my attention:\n\nYour phone can become an environment an AI agent can actually operate.\n\nImagine telling Codex:\n\n\u00ab\u201cBuild the latest APK, install it, log in with a test account, test the checkout flow, look for unexpected popups and return screenshots of anything that fails.\u201d\u00bb\n\nAnd the agent actually drives the device.\n\nThis could push AI-powered QA, mobile testing, debugging and automation much further.\n\nGoogle is basically giving AI agents hands for Android. \ud83e\udd16\ud83d\udcf1\n\nWhat would you build if your AI agent could control a real phone?",
+        "engagement": 1066,
+        "line_count": 49,
+        "language": "English",
+        "tags": [
+            "AI",
+            "Android"
+        ]
+    },
+    {
+        "text": "Google researchers are teaching AI agents to dream thousands of strategies before executing a single one. \ud83c\udf19 \ud83e\udd16 \n\nThat\u2019s the idea behind Dream-RSI, a new approach to recursive self-improvement from researchers at Google, Google DeepMind, the University of Maryland and University of Virginia.\n\nThe key insight is surprisingly simple:\n\n\ud83d\udc49 An AI agent\u2019s history is already a simulator.\n\nWhen an agent explores a problem, it creates a discovery tree containing previous decisions and their execution outcomes.\n\nInstead of throwing that history away, Dream-RSI turns it into a replay simulator.\n\n\ud83e\udde0 Generate thousands of alternative exploration policies\n\ud83c\udf33 Replay them against previously discovered trees\n\u26a1 Evaluate them with zero new executions\n\ud83c\udfc6 Deploy the best-performing policy\n\ud83d\udd04 Explore the real world again\n\ud83c\udf0d Add the new discovery tree to the simulator pool\n\nThen repeat.\n\nThat creates a recursive loop where the exploration strategy itself improves from experience.\n\nAnd the results are interesting:\n\u2022 2.43\u00d7 fewer generations on VGG16 at comparable performance\n\u2022 1.79\u00d7 fewer generations on LayerNorm\n\u2022 2.09\u00d7 higher performance on ConvDiv at comparable budgets\n\u2022 1.44\u00d7 higher performance on ConvMax\n\u2022 Up to 162\u00d7 fewer discovery-agent calls than SimpleTES on Lasso\n\nThe really interesting part?\n\nDream-RSI isn't simply feeding previous results back into the prompt.\nIt treats history as an executable search space.\n\nThe agent can ask:\n\n\u201cWhat if I had explored this differently?\u201d\n\nWithout actually running all those alternatives.\n\nOne expensive exploration run can therefore become a simulator for thousands of alternative policies.\n\nAnd every new deployment adds another \u201cworld\u201d to the pool.\n\nThe AI doesn't just learn from what it did.\n\nIt learns how to explore better next time. \ud83e\udde0\ud83c\udf33\n\nhashtag\n\n#AI hashtag\n#ArtificialIntelligence hashtag\n#MachineLearning hashtag\n#AIResearch hashtag\n#AIAgents hashtag\n#LLM hashtag\n#GenerativeAI hashtag\n#GoogleResearch hashtag\n#GoogleDeepMind hashtag\n#SelfImprovement hashtag\n#AIReasoning hashtag\n#Optimization hashtag\n#GPUComputing hashtag\n#DeepLearning",
+        "engagement": 263,
+        "line_count": 65,
+        "language": "English",
+        "tags": [
+            "AI",
+            "ArtificialIntelligence"
+        ]
+    },
+    {
+        "text": "NVIDIA is rethinking how we build AI agents in Python. \ud83e\udd16\n\nInstead of treating prompts, tools, state, callbacks, and workflows as separate abstractions, NOOA puts them into something developers already understand:\n\nA Python object.\nYou define an agent like a normal class:\n\u2192 Fields = agent state\n\u2192 Methods = capabilities\n\u2192 Docstrings = prompts\n\u2192 Type annotations = contracts\n\u2192 ... = let the LLM implement the method\n\nThat last part is particularly interesting.\n\nA normal Python method keeps its deterministic implementation.\n\nBut a method with ... becomes an LLM-driven agentic loop at runtime.\n\nSo the boundary between traditional software and agentic behavior becomes surprisingly simple.\n\nAnd NOOA keeps the engineering workflow familiar:\n\n\ud83e\udde0 Typed inputs and outputs\n\ud83d\udd0d Built-in tracing of LLM calls, code execution, and method invocations\n\ud83d\udcbb Python-based testing, refactoring, and version control\n\ud83d\udd0c Support for hosted and local models through LiteLLM\n\nThe bigger idea isn't just another agent framework.\nIt's treating agent behavior as software architecture rather than a collection of prompt and tool configurations.\n\nThat could make agents much easier to reason about, test, and compose.\n\nOne important caveat: NOOA can execute LLM-generated Python, so NVIDIA explicitly recommends OS-level sandboxing rather than relying on its in-process checks.\n\nWould you prefer building agents this way, or do you think explicit tool/workflow abstractions are still the better approach?\n\nhashtag\n\n#AI hashtag\n#AIEngineering hashtag\n#AIAgents hashtag\n#NVIDIA hashtag\n#Python hashtag\n#LLM hashtag\n#OpenSource",
+        "engagement": 1245,
+        "line_count": 45,
+        "language": "English",
+        "tags": [
+            "AI",
+            "Python"
+        ]
+    },
+    {
+        "text": "Google DeepMind + Massachusetts Institute of Technology + Stanford University are letting AI regenerate software from design docs. \ud83e\udd2f\ud83e\udd16\n\nWhat if code stopped being the source of truth?\n\nTheir new system, SMART, treats code as a disposable build artifact. \ud83d\udd04\n\nInstead, humans maintain natural-language design docs and AI agents regenerate the entire library from those docs. \ud83e\udd16\n\nThe workflow:\n\n\u2192 \ud83d\udcdd Design docs become a dependency DAG\n\u2192 \ud83e\udd16 AI agents implement each document\n\u2192 \u267b\ufe0f The entire library is regenerated\n\u2192 \ud83e\uddea Generated code is validated against reference models\n\u2192 \ud83d\ude80 Repeat\n\nAnd the main branch contains almost no code.\n\nThe clever part?\n\nThe docs include worked examples showing step-by-step execution, intermediate values, shapes, and exact expected cost expressions.\n\nSo documentation becomes:\n\ud83d\udcda Specification + \ud83d\udca1 examples + \ud83e\uddea tests.\n\nSMART already spans ~50 design docs and ~9,000 lines of specification covering TPU topology, collective communication, schedulers, numerics, and frontier models.\n\nA complete regeneration takes 1.5\u20133 hours and costs roughly $100.\n\nThe bigger idea is fascinating:\n\nHumans maintain intent.\nAI maintains implementation. \ud83d\ude80",
+        "engagement": 63,
+        "line_count": 33,
+        "language": "English",
+        "tags": [
+            "AI",
+            "DeepMind"
+        ]
+    },
+    {
+        "text": "NVIDIA just found a way to make one LLM reuse another LLM\u2019s memory. \ud83e\udd16 \ud83d\udd04 \ud83e\udd16 \n\nThis could change how we think about LLM routing, prompt caching, and inference costs.\n\nToday, KV caches are tied to the model that created them.\n\nSwitch to another model?\n\nThe new model can\u2019t use that cache. It has to process the entire context again \u2014 adding latency and compute. \u26a1\n\nNVIDIA researchers treat this as a representation problem.\n\nInstead of recomputing the context, they convert the source model\u2019s KV cache into the representation expected by the target model.\n\nAnd the surprising part:\n\nNo training required. \ud83e\udde0\n\nTheir approach combines:\n\n\u2192 Closed-form linear mappings for each target layer/head\n\u2192 Cross-layer selection to find the most predictive source layers\n\u2192 RoPE removal and reapplication for position-independent mapping\n\nFor Qwen3 14B \u2192 32B, a single source layer reconstructed 56% of the variance in target keys.\n\nUsing the best 8 source layers pushed that to 79%.\n\nAcross 6 model pairs from Qwen3, Llama 3.1, and Ministral 3:\n\n4 retained 73\u201398% of standalone accuracy. \ud83d\udcc8\n\nAnd KV-cache conversion was 3\u201325\u00d7 faster than processing the context again.\n\nThe bigger idea is fascinating:\n\nWhat if an LLM could hand its computational memory to another LLM?\n\nModels could potentially be routed dynamically based on:\n\n\u2192 \ud83d\udcb0 Cost\n\u2192 \ud83e\udde0 Capability\n\u2192 \u26a1 Latency\n\u2192 \ud83c\udf10 Availability\n\nThere are still limitations: tested transfers remain within model families, with matching KV dimensions, and dense full-attention models only.\n\nBut this is a compelling step toward portable model memory.\n\nWhat happens when KV cache becomes portable?",
+        "engagement": 219,
+        "line_count": 50,
+        "language": "English",
+        "tags": [
+            "LLM",
+            "KV cache"
+        ]
+    },
+    {
+        "text": "\ud83d\ude80 What if you could re-film a video from a camera that was never there?\ud83c\udfac\n\nResearchers at Westlake AGI Lab developed World in World to make this possible, using a frozen 14B video world model, without training or fine-tuning.\n\nGive it a video.\n\nThen give it a new camera path.\n\nThe system can re-film the same event from viewpoints that were never recorded.\n\n\ud83c\udfa5 Free-camera re-cinematography\n\u23f8\ufe0f Bullet time\n\u270f\ufe0f Video editing\n\ud83c\udf0e Long-horizon exploration\n\nThe key idea is fascinating:\nSource frames, depth/geometry, target-view projections and generated memories become visual evidence that is routed through the model\u2019s native self-attention.\n\nSo the model isn't simply generating another video.\n\nIt's using its learned world knowledge to reason about what the scene should look like from somewhere else.\n\nAnd it does this without training or fine-tuning the backbone.\n\nThis feels like an important shift:\nVideo generation \u2192 World exploration\n\nRecorded video starts looking less like footage\u2026\n\u2026and more like a navigable snapshot of the world. \ud83d\udd25\n\n\ud83d\udcc4 Paper: https://lnkd.in/g5CJ8bj9\n\ud83d\udcbb Code: https://lnkd.in/gKtR6qr5\n\nhashtag\n\n#AI hashtag\n#WorldModels hashtag\n#GenerativeAI hashtag\n#ComputerVision hashtag\n#PhysicalAI hashtag\n#VideoGeneration hashtag\n#Robotics",
+        "engagement": 31,
+        "line_count": 42,
+        "language": "English",
+        "tags": [
+            "AI",
+            "WorldModels"
+        ]
+    },
+    {
+        "text": "\ud83d\ude80 Huawei is showing how diffusion models could become the visual backbone for robotics, 3D reconstruction, AR/VR, and Physical AI.\n\nMarigold V2 shows how generative AI models can be repurposed for computer vision.\n\nResearchers from HUAWEI Bayer Lab, EPFL, and the University of Bologna transform a pretrained diffusion transformer into a single-step dense prediction model.\n\nThe results are impressive:\n\u26a1 16\u201326% improvement in AbsRel over previous best results on KITTI and ETH3D\n\ud83c\udfaf State-of-the-art zero-shot depth across 5 benchmarks\n\ud83d\udd0d Preserves details like hair, fur, foliage, wires and railings\n\ud83d\udda5\ufe0f Runs at 2048\u00d72048 on a single 32 GB GPU\n\ud83e\udde9 Uses 4-bit quantization + LoRA for efficient fine-tuning\nBut depth is only the beginning.\n\nThe same approach can produce:\n\n\ud83d\udc41\ufe0f See-through depth\n\ud83d\udcd0 Surface normals\n\ud83c\udfa8 Albedo\n\ud83d\udccf Metric depth completion\n\nThe inference pipeline is remarkably simple:\n\nJust:\nImage \u2192 VAE \u2192 Diffusion Transformer \u2192 VAE \u2192 Prediction\n\n\ud83d\udd17 Code: https://lnkd.in/gamuzHpU\n\ud83d\udcc4 Paper: https://lnkd.in/gTAaYMSN\n\nWhat other vision tasks could diffusion transformers solve?\n\nhashtag\n\n#AI hashtag\n#HUAWEI hashtag\n#ComputerVision hashtag\n#GenerativeAI hashtag\n#DiffusionModels hashtag\n#Robotics hashtag\n#PhysicalAI\nActivate to view larger image,",
+        "engagement": 1991,
+        "line_count": 41,
+        "language": "English",
+        "tags": [
+            "AI",
+            "HUAWEI"
+        ]
+    }
+]
