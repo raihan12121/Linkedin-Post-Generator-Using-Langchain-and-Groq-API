@@ -16,6 +16,18 @@ Generating authentic-sounding LinkedIn posts with standard zero-shot LLM prompts
 
 ---
 
+## 📺 Demo & Walkthrough
+
+### 🖥️ Streamlit Web Interface
+![LinkedIn Post Generator Demo](image.png)
+
+### 🎥 Video Walkthrough
+[![Watch Video Walkthrough](https://img.youtube.com/vi/1mZTfNVaXe4/maxresdefault.jpg)](https://youtu.be/1mZTfNVaXe4)
+
+> 🔗 **Watch the full demo on YouTube:** [https://youtu.be/1mZTfNVaXe4](https://youtu.be/1mZTfNVaXe4)
+
+---
+
 ## 🏗️ System Architecture
 
 ```mermaid
@@ -102,6 +114,7 @@ Linkedin Post Generator/
 ├── post_generator.py            # Prompt assembly & post generation logic
 ├── preprocessed.py              # Data preprocessing, metadata extraction & tag unification
 ├── requirements.txt             # Project dependencies
+├── image.png                    # Demo screenshot of the Streamlit application
 └── README.md                    # Project documentation
 ```
 
