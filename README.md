@@ -128,8 +128,8 @@ Linkedin Post Generator/
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/raihan12121/GenAI-Linkedin-Post-Generator-.git
-cd GenAI-Linkedin-Post-Generator-
+git clone https://github.com/raihan12121/Linkedin-Post-Generator-Using-Langchain-and-Groq-API.git
+cd Linkedin-Post-Generator-Using-Langchain-and-Groq-API
 ```
 
 ### 3. Setup Virtual Environment
