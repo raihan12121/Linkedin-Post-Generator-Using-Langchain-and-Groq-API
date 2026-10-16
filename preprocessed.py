@@ -1,5 +1,4 @@
 
-from tempfile import template
 import json
 import time
 import sys
@@ -28,8 +27,8 @@ def process_posts(raw_file_path, processed_file_path="data/processed_posts.json"
 
     unified_tags = get_unified_tags(enriched_posts)
     for post in enriched_posts:
-        currrent_tags = post['tags']
-        new_tags = { unified_tags[tag] for tag in currrent_tags}
+        current_tags = post['tags']
+        new_tags = {unified_tags.get(tag, tag) for tag in current_tags}
         post['tags'] = list(new_tags)
     
     with open(processed_file_path, encoding='utf-8', mode="w") as outfile:
@@ -57,10 +56,16 @@ def get_unified_tags(posts_with_metadata):
     
     Here is the list of tags: 
     {tags}
-'''
-
-
-
+    '''
+    pt = PromptTemplate.from_template(template)
+    chain = pt | llm
+    response = chain.invoke(input={'tags': unique_tags_list})
+    try:
+        json_parser = JsonOutputParser()
+        res = json_parser.parse(response.content)
+    except OutputParserException:
+        raise OutputParserException("Unable to parse unified tags.")
+    return res
 
 
 def extract_metadata(post):
