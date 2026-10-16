@@ -8,7 +8,7 @@ An AI-powered LinkedIn post generator that leverages **Few-Shot Prompting**, **L
 
 Generating authentic-sounding LinkedIn posts with standard zero-shot LLM prompts often yields generic, robotic results. This project solves that problem by building an end-to-end Few-Shot Learning pipeline:
 
-1. **Ingests historical LinkedIn posts** with real engagement numbers.
+1. **Curates 20+ real LinkedIn posts** from a creator's profile with authentic engagement metrics.
 2. **Enriches and preprocesses** data using an LLM to extract metadata (line counts, language, and unified semantic tags).
 3. **Dynamically retrieves few-shot exemplars** matching the desired length, language, and topic.
 4. **Synthesizes fresh posts** matching the author's writing style, formatting, and emoji usage via Groq's high-speed inference.
@@ -46,7 +46,7 @@ flowchart TD
 ## 🛠️ What I Have Done in This Project
 
 ### 1. Data Collection & Preprocessing Pipeline (`preprocessed.py`)
-- Analyzed unstructured raw LinkedIn posts (`data/raw_posts.json`).
+- **Profile Data Harvesting**: Selected a target LinkedIn creator profile and curated a dataset of 20+ real, high-engagement posts (`data/raw_posts.json`).
 - Built an automated metadata extraction chain using **LangChain `PromptTemplate`** and **`JsonOutputParser`** to extract:
   - `line_count`: Total lines in the post.
   - `language`: Detected language (`English` or `Banglish`).
