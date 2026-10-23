@@ -1,4 +1,4 @@
-# 🚀 GenAI LinkedIn Post Generator
+# 🚀 Linkedin Post Generator Using Langchain and Groq API
 
 An AI-powered LinkedIn post generator that leverages **Few-Shot Prompting**, **LangChain**, and **Groq Cloud LLMs** to generate realistic, high-engagement LinkedIn posts in a creator's distinct writing style. The application features an interactive **Streamlit** user interface allowing users to customize post topics, lengths, and languages (including English and Banglish).
 
@@ -19,7 +19,7 @@ Generating authentic-sounding LinkedIn posts with standard zero-shot LLM prompts
 ## 📺 Demo & Walkthrough
 
 ### 🖥️ Streamlit Web Interface
-![LinkedIn Post Generator Demo](image.png)
+![Linkedin Post Generator Using Langchain and Groq API Demo](image.png)
 
 ### 🎥 Video Walkthrough
 [![Watch Video Walkthrough](https://img.youtube.com/vi/1mZTfNVaXe4/maxresdefault.jpg)](https://youtu.be/1mZTfNVaXe4)
@@ -100,7 +100,7 @@ flowchart TD
 ## 📂 Repository Structure
 
 ```
-Linkedin Post Generator/
+Linkedin Post Generator Using Langchain and Groq API/
 │
 ├── data/
 │   ├── raw_posts.json           # Raw LinkedIn post data & engagement metrics
